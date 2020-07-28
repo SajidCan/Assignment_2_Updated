@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="quote_generator()">
+   <div class="full_wrapper">
+       <div class="wrapper part1">
+           <h2>Part 1</h2>
+           <p id="quote"></p>
+           <button id="green" class="green" onclick="green()">GREEN</button>
+           <button id="red" class="red" onclick="red()">RED</button>
+           <button id="orange" class="orange" onclick="orange()">ORANGE</button>
+           <button id="blue" class="blue" onclick="blue()">BLUE</button>
+       </div>
+   </div>
+   <div class="full_wrapper">
+       <div class="wrapper calculation">
+           <h2>Calculation</h2>
+           <input type="text" id="value" placeholder="value">
+           <select id="sel">
+               <option>option</option>
+               <option>lb to kg</option>
+               <option>kg to lb</option>
+           </select>
+           <button id="go" onclick="pound_kg()">GO</button>
+           <p id="calc"></p>
+       </div>
+   </div>
+   <div class="full_wrapper">
+       <div class="wrapper part2">
+           <h2>Part 2</h2>
+           <p>#Please use only numerical values</p>
+           <h3>Input Series of Number:</h3>
+           <input type="text" id="myInput" onkeyup="part2()">
+           <p>Max:<span id="max"></span></p>
+           <p>Min:<span id="min"></span></p>
+           <p>Sum:<span id="sum"></span></p>
+           <p>Average:<span id="average"></span></p>
+           <p>Reverse:<span id="reverse"></span></p>
+       </div>
+   </div>
+   <div class="full_wrapper">
+       <div class="wrapper part3">
+           <h2>Part 3</h2>
+           <form id="myForm">
+               <textarea id="text" cols="10" rows="5" class="inc"></textarea>
+               <br>
+               <input type="button" id="btn" onclick="reset_form()" value="Clear It">
+               <input type="button" id="btn" onclick="upperlower()" value="Capitalize">
+               <input type="button" id="btn" onclick="sorted()" value="Sort">
+               <input type="button" id="btn" onclick="reverse_it()" value="Reverse">
+               <input type="button" id="btn" onclick="strip()" value="Strip Blank">
+               <input type="button" id="btn" onclick="num()" value="Add Number">
+               <input type="button" id="btn" onclick="shuffle()" value="Shuffle">
+               <p id="demo"></p>
+           </form>
+           
+       </div>
+   </div>
+   
+    <script src="js/custom.js"></script>
+</body>
+</html>
