@@ -1,1 +1,1 @@
-# Assignment_2_Updated
+# Play around with input fields. The first part will change color whenever tapped on the color box, the second part will convert units and show result, and the third part includes uppercase, clear, sorting etc.  
